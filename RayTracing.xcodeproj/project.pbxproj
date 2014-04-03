@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33347F8318CF55EC00120782 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33347F8218CF55EC00120782 /* main.cpp */; };
+		33004C6518CF5D430024A818 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33004C6418CF5D430024A818 /* OpenGL.framework */; };
+		33347F8318CF55EC00120782 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33347F8218CF55EC00120782 /* main.cpp */; settings = {COMPILER_FLAGS = "-Wno-deprecated"; }; };
 		33347F8518CF55EC00120782 /* RayTracing.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 33347F8418CF55EC00120782 /* RayTracing.1 */; };
+		33347F8C18CF57CF00120782 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33347F8B18CF57CF00120782 /* Accelerate.framework */; };
+		33347F8E18CF57D600120782 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33347F8D18CF57D600120782 /* libz.dylib */; };
+		333D0B7C18E2430200B13488 /* libarmadillo.4.10.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 333D0B7B18E2430200B13488 /* libarmadillo.4.10.2.dylib */; };
+		33C9F7A618ECAD9400E5B328 /* Light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33C9F7A418ECAD9400E5B328 /* Light.cpp */; };
+		33CCE18618DCB32D00B1276F /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CCE18418DCB32D00B1276F /* Sphere.cpp */; };
+		33D624D518CF635400692FF3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D624D418CF635400692FF3 /* GLUT.framework */; };
+		33D624D818CF690900692FF3 /* Scenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33D624D618CF690900692FF3 /* Scenario.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +33,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		33004C6418CF5D430024A818 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		33347F7F18CF55EC00120782 /* RayTracing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayTracing; sourceTree = BUILT_PRODUCTS_DIR; };
 		33347F8218CF55EC00120782 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		33347F8418CF55EC00120782 /* RayTracing.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RayTracing.1; sourceTree = "<group>"; };
+		33347F8B18CF57CF00120782 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		33347F8D18CF57D600120782 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		333D0B7B18E2430200B13488 /* libarmadillo.4.10.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libarmadillo.4.10.2.dylib; path = "../../../../Downloads/armadillo-4.100.2/libarmadillo.4.10.2.dylib"; sourceTree = "<group>"; };
+		33C9F7A418ECAD9400E5B328 /* Light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Light.cpp; sourceTree = "<group>"; };
+		33C9F7A518ECAD9400E5B328 /* Light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Light.h; sourceTree = "<group>"; };
+		33CCE18418DCB32D00B1276F /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
+		33CCE18518DCB32D00B1276F /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
+		33CCE18818DCB52900B1276F /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		33D624D418CF635400692FF3 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = DEVELOPER_DIR; };
+		33D624D618CF690900692FF3 /* Scenario.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scenario.cpp; sourceTree = "<group>"; };
+		33D624D718CF690900692FF3 /* Scenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scenario.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +55,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333D0B7C18E2430200B13488 /* libarmadillo.4.10.2.dylib in Frameworks */,
+				33D624D518CF635400692FF3 /* GLUT.framework in Frameworks */,
+				33004C6518CF5D430024A818 /* OpenGL.framework in Frameworks */,
+				33347F8E18CF57D600120782 /* libz.dylib in Frameworks */,
+				33347F8C18CF57CF00120782 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +69,7 @@
 		33347F7618CF55EC00120782 = {
 			isa = PBXGroup;
 			children = (
+				33C9F7A718EE125000E5B328 /* Frameworks */,
 				33347F8118CF55EC00120782 /* RayTracing */,
 				33347F8018CF55EC00120782 /* Products */,
 			);
@@ -61,9 +87,28 @@
 			isa = PBXGroup;
 			children = (
 				33347F8218CF55EC00120782 /* main.cpp */,
+				33D624D618CF690900692FF3 /* Scenario.cpp */,
+				33D624D718CF690900692FF3 /* Scenario.h */,
 				33347F8418CF55EC00120782 /* RayTracing.1 */,
+				33CCE18418DCB32D00B1276F /* Sphere.cpp */,
+				33CCE18518DCB32D00B1276F /* Sphere.h */,
+				33CCE18818DCB52900B1276F /* Object.h */,
+				33C9F7A418ECAD9400E5B328 /* Light.cpp */,
+				33C9F7A518ECAD9400E5B328 /* Light.h */,
 			);
 			path = RayTracing;
+			sourceTree = "<group>";
+		};
+		33C9F7A718EE125000E5B328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				333D0B7B18E2430200B13488 /* libarmadillo.4.10.2.dylib */,
+				33D624D418CF635400692FF3 /* GLUT.framework */,
+				33004C6418CF5D430024A818 /* OpenGL.framework */,
+				33347F8D18CF57D600120782 /* libz.dylib */,
+				33347F8B18CF57CF00120782 /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				33347F8318CF55EC00120782 /* main.cpp in Sources */,
+				33CCE18618DCB32D00B1276F /* Sphere.cpp in Sources */,
+				33C9F7A618ECAD9400E5B328 /* Light.cpp in Sources */,
+				33D624D818CF690900692FF3 /* Scenario.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +243,36 @@
 		33347F8918CF55EC00120782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+					"/Users/iagocc/Downloads/armadillo-4.100.2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
 		33347F8A18CF55EC00120782 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+					"/Users/iagocc/Downloads/armadillo-4.100.2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
@@ -225,6 +295,7 @@
 				33347F8A18CF55EC00120782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
